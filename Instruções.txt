@@ -1,0 +1,117 @@
+**Instrucoes Professor
+
+Olá!
+
+Teremos o início do nosso último trabalho.
+
+Tenho a proposta de unir os dois últimos trabalhos.
+
+APEx - Monitoramento acústico comunitário com análise espectral
+
+Atividade de extensão voltada ao diagnóstico de ruído ambiental em espaços comunitários (escolas, unidades de saúde, áreas residenciais ou entorno universitário), utilizando aquisição de sinais de áudio, processamento digital e análise espectral para apoio à tomada de decisão e conscientização da comunidade.
+
+Objetivos específicos
+- Projetar e implementar sistema de aquisição de sinais acústicos com taxa de amostragem adequada.
+- Aplicar análise no domínio do tempo e da frequência (FFT).
+- Projetar e aplicar filtros digitais FIR/IIR para atenuação de ruídos indesejados ou separação de bandas.
+- Comparar níveis de ruído medidos com referências normativas (quando aplicável).
+- Traduzir os resultados técnicos em material compreensível para a comunidade.
+
+Entregas do projeto
+
+0. Pesquisa do que já foi feito na comunidade científica relacionado ao monitoramento acústico.
+
+1. Sistema de aquisição acústica
+
+Projeto e implementação de sistema de aquisição de sinais acústicos ambientais utilizando microfones/sensores adequados, condicionamento de sinais e plataforma computacional para armazenamento e processamento dos dados.
+
+A implementação poderá ser realizada em:
+
+    MATLAB;
+
+    Linguagens e bibliotecas de código aberto, como Python, utilizando bibliotecas de processamento digital de sinais e visualização de dados.
+
+Critério mínimo de aquisição por grupo:
+cada grupo deverá realizar uma quantidade mínima de 4 medições acústicas, contemplando diferentes períodos, ambientes ou condições operacionais.
+
+2. Base de dados acústicos ambientais
+
+Coleta, organização e armazenamento dos sinais acústicos obtidos nos ambientes monitorados, formando uma base de dados estruturada para análise temporal e espectral.
+
+Produtos associados:
+
+    Sinais acústicos coletados;
+
+    Registro das condições de medição;
+
+    Organização dos dados para processamento computacional.
+
+3. Análise espectral
+
+Aplicação de técnicas de processamento digital de sinais no domínio do tempo e da frequência, incluindo:
+
+    análise temporal;
+
+    Transformada Rápida de Fourier (FFT);
+
+    identificação de componentes espectrais predominantes;
+
+    comparação entre diferentes ambientes monitorados.
+
+4. Processamento digital de sinais
+
+Nesta etapa temos aplicações de acordo com o tipo de medição e objetivo do grupo. Como exemplos:
+
+Implementação de filtros digitais, detectores automáticos de ruídos de ambiente, separação de silêncio, técnicas em tempo real ou pós processadas.
+
+5. Comparação com referências normativas
+
+Avaliação dos níveis de ruído observados em relação a referências normativas e recomendações técnicas aplicáveis ao ambiente analisado, quando pertinente.
+
+6. Apresentação técnica dos resultados
+
+Os grupos deverão realizar apresentação técnica contendo:
+
+    descrição da metodologia utilizada;
+
+    sistema de aquisição implementado;
+
+    análises espectrais realizadas;
+
+    processamento digital aplicado;
+
+    interpretação dos resultados obtidos;
+
+    discussão sobre impactos acústicos observados.
+
+Não será exigida entrega de relatório técnico final.
+
+7. Material de divulgação e conscientização
+
+A apresentação deverá incluir material de divulgação voltado à comunidade, traduzindo os resultados técnicos em linguagem acessível e visualmente compreensível.
+
+Exemplos:
+
+    folders;
+
+    cartilhas;
+
+    infográficos;
+
+    painéis comparativos;
+
+    material educativo sobre poluição sonora e saúde ambiental.
+    
+    ===========================================================================
+    
+    ** Instrucoes aluno 
+    
+    O trabalho deve ser feito em python com biblioteca de audio
+    Deve possuir uma pasta onde será coletado os áudios e outra pasta onde ficará o código.
+    
+    O código deve ser simples e organizado, priorizando a boa manuteabilidade dele e o facil entendimento.
+    
+    Nas funções, as primeiras coisas a serem definidas deve ser as constantes, com nomes simples
+    A lógica deve priorizar o entendimento para explicar o código
+    
+
