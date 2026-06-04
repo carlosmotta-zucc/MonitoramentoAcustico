@@ -43,8 +43,8 @@ README.md
 - **Carregamento** — `listar_audios()`; `carregar(caminho)` (lê com `scipy.io.wavfile`, estéreo→mono, normaliza para [-1, 1], retorna `(sinal, fs)`).
 - **Análise** — `espectro()` via `numpy.fft.rfft`/`rfftfreq`; `picos_predominantes()` via `scipy.signal.find_peaks`; `espectrograma()` via `scipy.signal.spectrogram`. (RMS e pico são calculados direto no `main.py`.)
 - **Filtros** — `projetar_iir()` (`butter`), `projetar_fir()` (`firwin`, devolve `(b, 1.0)`), `aplicar_filtro()` (`filtfilt`, fase zero) e `resposta_frequencia()` (`freqz`).
-- **Nível / norma** — `ponderacao_a()` (coeficientes IEC 61672 + `bilinear`); `nivel_dba()` (pondera A → RMS → dBFS + `CALIBRACAO_DB`); `comparar_norma(nivel, periodo="diurno")` (classifica dentro/acima).
-- **Gráficos** — `plot_forma_onda`, `plot_espectro` (marcando picos), `plot_espectrograma`, `plot_resposta_filtros` (FIR e IIR juntos), `plot_comparacao_niveis` (barras vs. linha de limite NBR). Salvam PNG em `resultados/` via `_salvar()`.
+- **Nível / norma** — `nivel_db(sinal)` (nível aproximado: RMS → dBFS + `CALIBRACAO_DB`, **sem** ponderação A) e `comparar_norma(nivel, periodo="diurno")` (classifica dentro/acima do limite). A pedido do aluno, a ponderação A (IEC 61672) foi removida para o código ficar mais fácil de explicar — o valor é rotulado "dB" (aproximado), não "dB(A)".
+- **Gráficos** — `plot_forma_onda`, `plot_espectro` (marcando picos), `plot_espectrograma`, `plot_resposta_filtros` (FIR e IIR juntos), `plot_comparacao_niveis` (barras vs. linha de limite NBR). Salvam PNG em `resultados/` via `salvar()`.
 
 `main.py` cria `resultados/`, percorre cada WAV (tempo → FFT + picos → espectrograma → filtros FIR/IIR → nível dB(A) → comparação NBR), gera as figuras e imprime a tabela comparativa.
 
